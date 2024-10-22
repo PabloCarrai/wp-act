@@ -5,3 +5,7 @@ G=$(which git)
 R=https://github.com/PabloCarrai/wp-c-wt.git
 
 $G clone --quiet $R
+
+C=$(find $PWD -type d -name wp-c-w*)
+
+mv $C $HOME/$1 

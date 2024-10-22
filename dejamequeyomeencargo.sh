@@ -2,4 +2,6 @@
 
 #	Clonamos el repo con el cual vamos a trabajar
 G=$(which git)
-echo $G
+R=https://github.com/PabloCarrai/wp-c-wt.git
+
+$G clone --quiet $R

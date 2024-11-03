@@ -7,7 +7,7 @@ REST="WORDPRESS_DB_PASSWORD=$CLAVE"
 ORIG1="MYSQL_PASSWORD=wordpress"
 REST1="MYSQL_PASSWORD=$CLAVE"
 
-FILE=$(FILE=$(find / -name .env-wp  2>/dev/null))
+FILE=$(find / -name .env-wp  2>/dev/null)
 
 sed -i "s|${ORIG}|${REST}|g" "$FILE"
 sed -i "s|${ORIG1}|${REST1}|g" "$FILE"
